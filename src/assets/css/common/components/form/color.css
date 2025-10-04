@@ -1,0 +1,11 @@
+input[type="color"] {
+  @apply h-6 w-6 rounded-3xl;
+}
+
+input[type="color"],
+input[type="color"]:active,
+input[type="color"]:focus,
+input[type="color"]:focus-visible,
+input[type="color"]:focus-within {
+  @apply !border-none !shadow-none !ring-0 !outline-none;
+}

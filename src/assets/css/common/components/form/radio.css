@@ -1,0 +1,28 @@
+/* ---------------------------------------- */
+/* Radio button */
+/* ---------------------------------------- */
+.radio {
+  @apply flex items-center;
+}
+
+.radio input {
+  @apply h-4 w-4 cursor-pointer rounded-full border-2 border-[#E4E4E4] bg-white;
+}
+.radio:hover input {
+  @apply border-main/30;
+}
+
+.radio label {
+  @apply ms-2 cursor-pointer text-sm font-medium text-dark transition-all duration-150 ease-in-out;
+}
+
+.radio:checked,
+.radio:checked:focus,
+[type="radio"]:checked,
+[type="radio"]:checked:focus {
+  @apply bg-dark;
+}
+.radio:checked:hover,
+[type="radio"]:checked:hover {
+  @apply bg-main;
+}

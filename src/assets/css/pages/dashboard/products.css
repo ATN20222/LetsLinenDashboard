@@ -1,0 +1,99 @@
+/* Products Forms & Variants — Tailwind Version */
+
+.form-grid {
+  @apply grid gap-3;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    @apply grid-cols-2;
+  }
+}
+
+.form-control {
+  @apply bg-surface-2 text-text-secondary border border-border-primary 
+  rounded-[10px] px-3 py-2.5;
+}
+
+.form-field {
+  @apply flex flex-col;
+}
+
+.is-invalid {
+  @apply border-[#e74c3c] outline-none;
+}
+
+.field-error {
+  @apply text-[#e74c3c] text-[12px] mt-1;
+}
+
+.form-actions {
+  @apply flex gap-[10px];
+}
+
+.btn {
+  @apply px-[14px] py-[10px] rounded-[10px] border border-border-primary 
+  bg-secondary text-[#0b1e1d] cursor-pointer transition duration-150 ease-in-out;
+}
+
+.btn.secondary {
+  @apply bg-surface-2 text-text-secondary;
+}
+
+.images-grid {
+  @apply grid gap-[10px] [grid-template-columns:repeat(auto-fill,minmax(120px,1fr))];
+}
+
+.image-item {
+  @apply relative bg-surface-2 border border-border-primary rounded-[10px] p-2 
+  grid place-items-center aspect-square overflow-hidden;
+}
+
+.image-item img {
+  @apply max-w-full max-h-full rounded-[6px];
+}
+
+.image-remove {
+  @apply absolute top-[6px] right-[6px] bg-[rgba(0,0,0,0.6)] text-white 
+  border-0 rounded-full w-[26px] h-[26px] grid place-items-center cursor-pointer;
+}
+
+.upload-dropzone {
+  @apply border border-dashed border-border-primary rounded-[12px] p-[18px] 
+  flex justify-center items-center gap-[10px] bg-surface-2 text-text-secondary;
+}
+
+.upload-dropzone input[type="file"] {
+  @apply hidden;
+}
+
+.upload-dropzone .upload-btn {
+  @apply px-3 py-2 rounded-[10px] border border-border-primary 
+  bg-secondary text-[#0b1e1d] cursor-pointer;
+}
+
+.upload-hint {
+  @apply text-[13px] text-text-secondary;
+}
+
+.variants {
+  @apply border border-border-primary rounded-[12px] p-3 bg-surface-2;
+}
+
+.variants-header {
+  @apply flex justify-between items-center mb-2;
+}
+
+.variant-row {
+  @apply grid gap-2 mb-2 items-center 
+  [grid-template-columns:1fr_1fr_1fr_auto];
+}
+
+.variant-row input {
+  @apply w-full;
+}
+
+.variant-remove {
+  @apply bg-transparent border border-border-primary 
+  rounded-[8px] px-2 py-[6px];
+}

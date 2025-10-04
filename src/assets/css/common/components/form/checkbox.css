@@ -1,0 +1,29 @@
+/* ---------------------------------------- */
+/* Checkbox */
+/* ---------------------------------------- */
+.checkbox {
+  @apply flex items-start;
+}
+
+.checkbox input {
+  @apply mt-[0.125rem] h-4 w-4 cursor-pointer rounded border-2 border-[#E4E4E4] bg-white;
+}
+.checkbox:hover input {
+  @apply border-main/30;
+}
+
+.checkbox label {
+  @apply text-dark flex cursor-pointer items-center gap-2 !bg-transparent text-sm font-medium transition-all duration-150 ease-in-out;
+}
+
+.checkbox input[type="checkbox"]:checked,
+.checkbox input[type="checkbox"]:checked:focus,
+[type="checkbox"]:checked,
+[type="checkbox"] input:checked:focus {
+  color: #202020 !important;
+}
+
+.checkbox input[type="checkbox"]:checked:hover,
+[type="checkbox"]:checked:hover {
+  color: #202020 !important;
+}

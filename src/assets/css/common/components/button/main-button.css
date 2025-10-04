@@ -1,0 +1,7 @@
+.main-btn {
+  @apply p-2 px-3 bg-dark/95 text-main flex items-center gap-3 rounded-lg transition-all;
+  @apply hover:bg-current/10;
+}
+
+.main-btn i {
+}

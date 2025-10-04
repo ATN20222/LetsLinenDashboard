@@ -1,0 +1,7 @@
+input::-webkit-calendar-picker-indicator {
+  @apply text-main -translate-y-[3px] rounded-full text-xs;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  @apply absolute inset-0 h-auto w-auto cursor-pointer bg-transparent bg-none text-transparent;
+}

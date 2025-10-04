@@ -1,0 +1,36 @@
+/* Orders Page Styles — Tailwind Version */
+
+.orders-toolbar {
+  @apply flex flex-wrap gap-[10px] mb-4;
+}
+
+.orders-toolbar input,
+.orders-toolbar select {
+  @apply bg-surface-2 border border-border-primary 
+  rounded-[10px] px-[10px] py-2;
+}
+
+/* Details page controls */
+.ds-card select {
+  @apply bg-surface-2 border border-border-primary 
+  rounded-[10px] px-[10px] py-2;
+}
+
+.ds-card button {
+  @apply px-3 py-2 rounded-[10px] border border-border-primary 
+  bg-secondary text-[#0b1e1d] transition duration-150 ease-in-out;
+}
+
+.ds-card button:hover {
+  @apply brightness-105;
+}
+
+.back-link {
+  @apply text-secondary;
+}
+
+.back-link:hover {
+  @apply underline;
+}
+
+/* Table and responsive table styles handled separately in tabulator-dark.css */

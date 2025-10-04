@@ -1,0 +1,44 @@
+/* Packages imports */
+@import "./assets/css/common/vendors/_vendors.css";
+
+/* Tailwind config */
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 480px;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-ibm: "IBM Plex Sans Arabic", sans-serif;
+
+  /* Theme */
+  --color-main: #ffffff;
+  --color-light: #ffffff;
+  --color-dark: #202020;
+
+  /* Main */
+  --color-primary: #0e0e0e;
+  --color-secondary: #9DD8D4;
+
+  /* Text */
+  --color-text-secondary: #b0b0b0;
+  --color-muted: hsl(rgba(255, 255, 255, 0.06));
+
+  /* Border */
+  --color-border-primary: hsl(rgba(255, 255, 255, 0.08));
+
+  /* Background */
+  --color-surface-1: #111111;
+  --color-surface-2: #151515;
+  --color-surface-3: hsl(rgba(21, 21, 21, 0.85));
+}
+
+@custom-variant child {
+  & > * {
+    @slot;
+  }
+}
+
+/* Common styles */
+@import "./assets/css/common/base/_base.css";
+@import "./assets/css/common/components/_components.css";

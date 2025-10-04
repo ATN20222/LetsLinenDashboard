@@ -1,0 +1,60 @@
+/* ---------------------------------------- */
+/* Drag and drop */
+/* ---------------------------------------- */
+
+.drag-drop-input {
+  @apply flex w-full items-center justify-center;
+}
+.drag-drop-input__label {
+  @apply flex w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-lg border-2 border-dashed border-[#D2D3D3]/40 bg-[#f9f9f9]/40 px-4 py-4 transition-all duration-150 ease-in-out;
+  @apply md:min-h-[300px] md:px-5;
+  @apply hover:border-[#D2D3D3]/70 hover:bg-[#fafafab3];
+}
+
+.drag-drop-input__label > i {
+  @apply text-2xl text-black/40 transition-all duration-150 ease-in-out;
+}
+.drag-drop-input__label > div {
+  @apply child:text-center flex flex-col items-center gap-3;
+  @apply md:gap-2;
+}
+.drag-drop-input__label p:first-of-type {
+  @apply font-poppins text-base font-medium text-black;
+}
+.drag-drop-input__label p:last-of-type {
+  @apply text-sm font-normal text-black/40;
+}
+
+.drag-drop-input.focus .drag-drop-input__label > i,
+.drag-drop-input__label:hover > i {
+  @apply text-main;
+}
+
+.drag-drop-input.focus .drag-drop-input__label {
+  @apply border-[#cbe5ff] bg-[#f7fbff];
+}
+
+.drag-drop-input.has-files {
+  @apply hidden;
+}
+
+.drag-drop-input.has-files .drag-drop-input__label > div {
+  @apply child:text-left items-start;
+}
+.drag-drop-input ~ button[type="submit"] {
+  @apply hidden;
+}
+.drag-drop-input.has-files ~ button[type="submit"] {
+  @apply flex;
+}
+.drag-drop-input:not(.has-files) ~ .uploaded-files {
+  @apply hidden;
+}
+
+.drag-drop-input__label.invalid {
+  @apply border-[#ffd1d1];
+}
+
+.drag-drop-input__label.invalid > i {
+  @apply text-red-500;
+}

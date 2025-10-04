@@ -1,0 +1,5 @@
+@import "./button/_button.css";
+@import "./form/_form.css";
+@import "./navbar/_navbar.css";
+@import "./loader/_loader.css";
+@import "./table/_table.css";

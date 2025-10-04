@@ -1,0 +1,40 @@
+.kpi-card {
+  @apply grid grid-cols-[auto_1fr_auto] items-center gap-3 p-4 border border-current/10 rounded-2xl;
+  @apply bg-gradient-to-b from-surface-2 to-surface-3 mb-10;
+}
+
+.kpi-icon {
+  @apply w-11 h-11 rounded-xl grid place-items-center bg-secondary;
+}
+
+.kpi-content h4 {
+  @apply text-[14px] font-medium;
+}
+
+.kpi-value {
+  @apply text-[24px] font-bold text-main;
+}
+
+.kpi-trend {
+  @apply text-[12px] px-2 py-1 rounded-full bg-muted text-main;
+}
+
+.charts-grid {
+  @apply grid grid-cols-1 gap-4 md:grid-cols-[2fr_1fr];
+}
+
+.chart-card {
+  @apply bg-surface-2 border border-current/10 rounded-2xl p-4;
+}
+
+.chart-title {
+  @apply text-[16px] font-semibold mb-3;
+}
+
+.chart-wrapper {
+  @apply relative w-full h-[320px];
+}
+
+.muted {
+  @apply text-text-secondary;
+}

@@ -1,0 +1,66 @@
+@import "./checkbox.css";
+@import "./color.css";
+@import "./datetime.css";
+@import "./drag-drop.css";
+@import "./input.css";
+@import "./radio.css";
+@import "./range.css";
+@import "./search.css";
+@import "./select.css";
+@import "./textarea.css";
+@import "./toggle-button.css";
+@import "./validation.css";
+
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  @apply border-dark/40;
+}
+
+form {
+  @apply flex w-full flex-col gap-9;
+}
+
+input,
+input:active,
+input:focus,
+input:focus-visible,
+input:focus-within,
+textarea,
+textarea:active,
+textarea:focus,
+textarea:focus-visible,
+textarea:focus-within,
+[type="checkbox"],
+[type="checkbox"]:active,
+[type="checkbox"]:focus,
+[type="checkbox"]:focus-visible,
+[type="checkbox"]:focus-within,
+[type="radio"],
+[type="radio"]:active,
+[type="radio"]:focus,
+[type="radio"]:focus-visible,
+[type="radio"]:focus-within {
+  @apply !shadow-none !ring-0 !ring-transparent !outline-0 !outline-none;
+}
+
+.form-actions {
+  @apply flex w-full flex-col-reverse justify-end gap-4 lg:flex-row;
+}
+
+.form-actions button,
+.form-actions a {
+  @apply w-full !py-3 !text-sm lg:w-auto;
+}

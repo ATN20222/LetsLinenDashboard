@@ -1,0 +1,41 @@
+/* ---------------------------------------- */
+/* Textarea */
+/* ---------------------------------------- */
+
+textarea {
+  @apply resize-y;
+}
+
+textarea:disabled {
+  @apply resize-none;
+}
+
+.input-field textarea {
+  @apply text-dark w-full rounded-lg border border-solid border-[#858C94]/20 bg-white p-3 text-sm shadow-none ring-0 transition-all duration-150 ease-in-out outline-none;
+  @apply placeholder:text-[#09101D]/50;
+}
+
+.input-field:hover textarea {
+  @apply border-dark/20;
+}
+
+.input-field textarea:active,
+.input-field textarea:focus-within,
+.input-field textarea:focus-visible,
+.input-field textarea:focus {
+  @apply border-main bg-white;
+}
+.input-field textarea:active + label,
+.input-field textarea:focus-within + label,
+.input-field textarea:focus-visible + label,
+.input-field textarea:focus + label {
+  @apply text-main;
+}
+
+#char-counter {
+  @apply mt-1 ml-auto w-fit text-xs text-gray-400 select-none;
+}
+
+#char-counter.warning {
+  @apply text-red-500;
+}

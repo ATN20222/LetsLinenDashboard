@@ -1,0 +1,56 @@
+/* ---------------------------------------- */
+/* Toggle button */
+/* ---------------------------------------- */
+
+.toggle {
+  @apply relative mb-2 flex w-fit flex-wrap items-center gap-y-2 last-of-type:mb-0;
+}
+.toggle span {
+  @apply ml-3 cursor-pointer;
+}
+.toggle > input[type="radio"],
+.toggle > input[type="checkbox"] {
+  @apply sr-only;
+}
+.toggle-circle {
+  @apply flex h-[1.2rem] w-8 shrink-0 cursor-pointer items-center rounded-full bg-[#f7f7f7];
+  @apply after:absolute after:left-[4px] after:h-[0.7rem] after:w-[0.7rem] after:rounded-full after:bg-white after:shadow-md after:transition-all after:content-[''];
+  @apply peer-checked:bg-main peer-focus:outline-none peer-checked:after:translate-x-full;
+}
+.toggle-label {
+  @apply text-dark ml-3 cursor-pointer text-sm leading-none font-medium first-letter:capitalize;
+}
+
+.toggle > input[type="radio"]:disabled ~ .toggle-label,
+.toggle > input[type="radio"]:disabled ~ .toggle-circle,
+.toggle > input[type="checkbox"]:disabled ~ .toggle-label,
+.toggle > input[type="checkbox"]:disabled ~ .toggle-circle {
+  @apply pointer-events-none;
+}
+
+.toggle > input[type="radio"]:checked:disabled ~ .toggle-circle,
+.toggle > input[type="checkbox"]:checked:disabled ~ .toggle-circle {
+  @apply bg-main/50 after:shadow-none;
+}
+
+.toggle > input[type="radio"]:disabled ~ .toggle-circle,
+.toggle > input[type="checkbox"]:disabled ~ .toggle-circle {
+  @apply bg-gray-100/80 after:shadow-none;
+}
+
+.toggle > input[type="radio"]:disabled ~ .toggle-label,
+.toggle > input[type="checkbox"]:disabled ~ .toggle-label {
+  @apply text-gray-500;
+}
+
+.toggle > p {
+  @apply text-dark/50 w-full text-sm;
+}
+
+.toggle-wrapper {
+  @apply !mt-4 flex gap-3;
+}
+
+.toggle-wrapper span {
+  @apply font-inter text-sm ;
+}

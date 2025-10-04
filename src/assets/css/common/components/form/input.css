@@ -1,0 +1,99 @@
+/* ---------------------------------------- */
+/* Inputs (all types) */
+/* ---------------------------------------- */
+
+/* Hide the spin buttons (arrows) in WebKit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spin buttons (arrows) in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Removing autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s !important;
+  background-color: transparent !important;
+}
+input:-internal-autofill-selected,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus,
+input:-moz-autofill:active {
+  border-radius: 10rem !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: #f9f9f9 !important;
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  box-shadow: inset 0 0 20px 20px transparent !important;
+}
+
+input[type="file"] {
+  @apply cursor-pointer;
+}
+
+input::file-selector-button {
+  @apply hidden;
+}
+
+.input-field {
+  @apply relative;
+}
+.input-field input:not([type="color"]) {
+  @apply font-inter w-full rounded-lg border border-solid border-[#858C94]/20 bg-white p-3 text-sm font-medium text-[#09101D]/80 shadow-none ring-0 transition-all duration-150 ease-in-out outline-none;
+  @apply placeholder:text-[#09101D]/40;
+}
+.input-field:hover input:not([type="color"]) {
+  @apply border-dark/20;
+}
+
+.input-field label {
+  @apply font-inter mb-3 flex items-center justify-between text-sm leading-none font-medium text-[#63666b] transition-all duration-150 ease-in-out;
+}
+.input-field .description {
+  @apply text-dark/30 font-inter mt-2.5 text-sm font-medium;
+}
+.input-field .details {
+  @apply font-inter text-dark/30 absolute top-[2.125rem] right-4 text-sm font-medium;
+}
+
+.input-field:hover label {
+  @apply border-[#6A6A6A];
+}
+
+.input-field input:active,
+.input-field input:focus-within,
+.input-field input:focus-visible,
+.input-field input:focus {
+  @apply border-main bg-white;
+}
+.input-field input:active + label,
+.input-field input:focus-within + label,
+.input-field input:focus-visible + label,
+.input-field input:focus + label {
+  @apply text-main;
+}
+
+.input-field .suffix {
+  @apply text-dark/30 absolute top-1/2 right-4 -translate-y-1/2 text-xs font-medium;
+}
+.input-field > button {
+  @apply absolute top-1/2 right-4 -translate-y-1/2 p-1 text-black/50;
+  @apply hover:text-black/80;
+}
+
+.input-field small {
+  @apply text-dark/60 absolute top-10 right-4 text-sm leading-none;
+}

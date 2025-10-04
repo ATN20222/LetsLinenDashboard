@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Odlica" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/assets/img/favicon/favicon.ico"
+    />
+    <title>Usage</title>
+  </head>
+  <body class="spinner">
+    
+    <div class="ds-app">
+      <main class="ds-content">
+        <div class="container">
+          <div class="ds-grid ds-grid-3">
+            <div class="kpi-card" data-aos="fade-up">
+              <div class="kpi-icon">
+                <img
+                  src="./assets/icons/cart.svg"
+                  alt=""
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="kpi-content">
+                <h4>Total Sales</h4>
+                <div class="kpi-value">$18,240</div>
+              </div>
+              <div class="kpi-trend">+12%</div>
+            </div>
+            <div class="kpi-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="kpi-icon">
+                <img
+                  src="./assets/icons/Heart-filled.svg"
+                  alt=""
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="kpi-content">
+                <h4>New Orders</h4>
+                <div class="kpi-value">1,248</div>
+              </div>
+              <div class="kpi-trend">+4%</div>
+            </div>
+            <div class="kpi-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="kpi-icon">
+                <img
+                  src="./assets/icons/user.svg"
+                  alt=""
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="kpi-content">
+                <h4>Customers</h4>
+                <div class="kpi-value">5,320</div>
+              </div>
+              <div class="kpi-trend">+8%</div>
+            </div>
+          </div>
+
+          <div class="charts-grid">
+            <div class="chart-card" data-aos="fade-up">
+              <div class="chart-title">Revenue Overview</div>
+              <div class="chart-wrapper">
+                <canvas id="revenueChart"></canvas>
+              </div>
+            </div>
+            <div class="chart-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="chart-title">Category Breakdown</div>
+              <div class="chart-wrapper h-[320px]">
+                <canvas id="categoryChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script type="module"  src="/src/assets/js/pages/dashboard/_dashboard.js"></script>
+  </body>
+</html>

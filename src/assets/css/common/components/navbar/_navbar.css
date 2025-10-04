@@ -1,0 +1,30 @@
+/* Sticky navbar */
+.navbar {
+  @apply sticky top-0 z-10 flex h-[70px] shrink-0 items-center justify-between border-b border-solid border-[#F3F5F6] bg-white px-6;
+  @apply md:pl-8;
+}
+
+.navbar-title {
+  @apply text-dark font-poppins text-base font-semibold;
+  @apply md:text-lg;
+}
+.navbar-title + p {
+  @apply mt-1 text-xs opacity-50;
+}
+
+.navbar-toggle {
+  @apply absolute z-30 h-7 w-7 cursor-pointer rounded-full border border-solid border-[#F3F5F6] bg-white;
+  top: 55px;
+  left: -16px;
+  overflow: visible !important;
+}
+
+.navbar-actions {
+  @apply flex items-center gap-2;
+  @apply md:gap-4;
+}
+
+.navbar-actions .alt-btn span {
+  @apply hidden;
+  @apply md:flex;
+}

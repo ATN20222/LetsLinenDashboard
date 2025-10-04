@@ -1,0 +1,7 @@
+.loader::before {
+  @apply fixed inset-0 z-[1000] block items-center justify-center bg-white/50 backdrop-blur-md content-[''];
+}
+
+.loader::after {
+  @apply fixed inset-0 z-[1001] mx-auto w-12 origin-center animate-pulse bg-[url(/src/assets/img/logo-icon.svg)] bg-contain bg-center bg-no-repeat content-[''];
+}

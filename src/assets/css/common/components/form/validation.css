@@ -1,0 +1,46 @@
+/* Validation state */
+.validation-msg {
+  @apply mt-1 flex text-sm font-medium text-[#E52A2A];
+}
+
+.radio:user-invalid,
+.checkbox input:user-invalid,
+.input-field input:user-invalid,
+.input-field textarea:user-invalid,
+.input-field input:user-invalid:active,
+.input-field input:user-invalid:focus-within,
+.input-field input:user-invalid:focus-visible,
+.input-field input:user-invalid:focus,
+.input-field textarea:user-invalid:active,
+.input-field textarea:user-invalid:focus-within,
+.input-field textarea:user-invalid:focus-visible,
+.input-field textarea:user-invalid:focus,
+.input-field select:user-invalid:active,
+.input-field select:user-invalid:focus-within,
+.input-field select:user-invalid:focus-visible,
+.input-field select:user-invalid:focus {
+  @apply border-[#ff3838];
+}
+
+.input-field input:user-invalid ~ .validation-msg,
+.input-field textarea:user-invalid ~ .validation-msg,
+.input-field select:user-invalid ~ .validation-msg {
+  @apply block;
+}
+
+.input-field input:user-invalid ~ label,
+.input-field textarea:user-invalid ~ label,
+.input-field input:user-invalid:active ~ label,
+.input-field input:user-invalid:focus-within ~ label,
+.input-field input:user-invalid:focus-visible ~ label,
+.input-field input:user-invalid:focus ~ label,
+.input-field textarea:user-invalid:active ~ label,
+.input-field textarea:user-invalid:focus-within ~ label,
+.input-field textarea:user-invalid:focus-visible ~ label,
+.input-field textarea:user-invalid:focus ~ label,
+.input-field select:user-invalid:active ~ label,
+.input-field select:user-invalid:focus-within ~ label,
+.input-field select:user-invalid:focus-visible ~ label,
+.input-field select:user-invalid:focus ~ label {
+  @apply text-red-700;
+}

@@ -1,0 +1,24 @@
+@import "./main-button.css";
+
+a,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  @apply child:first-letter:capitalize cursor-pointer transition-all duration-150 ease-in-out;
+}
+
+a i + span,
+button i + span,
+input[type="submit"] i + span,
+input[type="button"] i + span,
+input[type="reset"] i + span {
+  @apply pr-1;
+}
+
+button[disabled],
+input[type="button"][disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled] {
+  @apply !pointer-events-none cursor-default bg-gray-100/80 text-gray-400;
+}

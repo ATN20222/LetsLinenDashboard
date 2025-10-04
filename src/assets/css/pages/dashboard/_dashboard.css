@@ -1,0 +1,6 @@
+@reference "@/style.css";
+
+@import "./home.css";
+@import "./layouts.css";
+@import "./orders.css";
+@import "./products.css";
