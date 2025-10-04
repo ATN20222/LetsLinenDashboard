@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #F1EFE0;
+    --secondary-color: #9DD8D4;
+    --text-color: #000;
+    --text-color-secondary: #686363;
+    --text-color-hover: #313131;
+    --font-primary: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+body{
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    overflow-x: hidden;
+}

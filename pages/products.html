@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/favicon.svg">
+    <title>Products - LET’S LINEN</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/Layout.css">
+    <link rel="stylesheet" href="../css/import.css">
+    <link rel="stylesheet" href="../css/ds-layout.css">
+    <link rel="stylesheet" href="../css/ds-orders.css">
+    <link rel="stylesheet" href="../css/tabulator-dark.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@5.6.2/dist/css/tabulator.min.css">
+</head>
+<body>
+    <div class="ds-app">
+        <aside id="sidebar" class="ds-sidebar">
+            <div class="ds-brand">
+                <img src="../assets/images/Logo.svg" alt="Logo" width="28" height="28">
+                <span>LET’S LINEN</span>
+            </div>
+            <nav class="ds-nav">
+                <a href="../index.html">Dashboard</a>
+                <a href="./orders.html">Orders</a>
+                <a href="#" class="active">Products</a>
+
+            </nav>
+        </aside>
+        <header class="ds-header">
+            <div class="ds-search">
+                <img id="sidebarToggle" src="../assets/icons/bars-white.svg" alt="menu" width="18" height="18" aria-controls="sidebar" aria-expanded="false">
+                <input type="text" placeholder="Search..." aria-label="Search">
+            </div>
+            <div class="ds-actions">
+                <img src="../assets/icons/user-white.svg" alt="profile" width="24" height="24">
+            </div>
+        </header>
+        <main class="ds-content">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3" data-aos="fade-up">
+                  <h2>Products</h2>
+                  <a class="btn" href="./product-add.html">Add Product</a>
+                </div>
+                <div class="orders-toolbar" data-aos="fade-up" data-aos-delay="50">
+                    <input id="searchInput" type="search" placeholder="Search by name or SKU">
+                    <select id="categoryFilter">
+                        <option value="">All categories</option>
+                        <option>Bedding</option>
+                        <option>Decor</option>
+                        <option>Bath</option>
+                    </select>
+                </div>
+                <div class="orders-table-wrapper" data-aos="fade-up" data-aos-delay="100"><div id="productsTable"></div></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/tabulator-tables@5.6.2/dist/js/tabulator.min.js"></script>
+    <script src="../js/components/table.js"></script>
+    <script src="../js/data/products.js"></script>
+    <script src="../js/ui-modal.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script> if (window.AOS) { AOS.init(); } </script>
+</body>
+</html>
+
+

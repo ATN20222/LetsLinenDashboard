@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/favicon.svg">
+    <title>LET’S LINEN . Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/Layout.css">
+    <link rel="stylesheet" href="./css/import.css">
+    <link rel="stylesheet" href="./css/ds-layout.css">
+    <link rel="stylesheet" href="./css/ds-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div class="ds-app">
+        <aside id="sidebar" class="ds-sidebar">
+            <div class="ds-brand">
+                <img src="./assets/images/Logo.svg" alt="Logo" width="28" height="28">
+                <span>LET’S LINEN</span>
+            </div>
+            <nav class="ds-nav">
+                <a href="#" class="active">Dashboard</a>
+                <a href="./pages/orders.html">Orders</a>
+                <a href="./pages/products.html">Products</a>
+            </nav>
+        </aside>
+        <header class="ds-header">
+            <div class="ds-search">
+                <img id="sidebarToggle" src="./assets/icons/bars-white.svg" alt="menu" width="18" height="18" aria-controls="sidebar" aria-expanded="false">
+                <input type="text" placeholder="Search..." aria-label="Search">
+            </div>
+            <div class="ds-actions">
+                <img src="./assets/icons/user-white.svg" alt="profile" width="24" height="24">
+            </div>
+        </header>
+        <main class="ds-content">
+            <div class="container">
+                <div class="ds-grid ds-grid-3 mb-4">
+                    <div class="kpi-card" data-aos="fade-up">
+                        <div class="kpi-icon"><img src="./assets/icons/cart.svg" alt="" width="18" height="18"></div>
+                        <div class="kpi-content">
+                            <h4>Total Sales</h4>
+                            <div class="kpi-value">$18,240</div>
+                        </div>
+                        <div class="kpi-trend">+12%</div>
+                    </div>
+                    <div class="kpi-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="kpi-icon"><img src="./assets/icons/Heart-filled.svg" alt="" width="18" height="18"></div>
+                        <div class="kpi-content">
+                            <h4>New Orders</h4>
+                            <div class="kpi-value">1,248</div>
+                        </div>
+                        <div class="kpi-trend">+4%</div>
+                    </div>
+                    <div class="kpi-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="kpi-icon"><img src="./assets/icons/user.svg" alt="" width="18" height="18"></div>
+                        <div class="kpi-content">
+                            <h4>Customers</h4>
+                            <div class="kpi-value">5,320</div>
+                        </div>
+                        <div class="kpi-trend">+8%</div>
+                    </div>
+                </div>
+
+                <div class="charts-grid">
+                    <div class="chart-card" data-aos="fade-up">
+                        <div class="chart-title">Revenue Overview</div>
+                        <div class="chart-wrapper">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="chart-title">Category Breakdown</div>
+                        <div class="chart-wrapper" style="height: 320px;">
+                            <canvas id="categoryChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/ds-home.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

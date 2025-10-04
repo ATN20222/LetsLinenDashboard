@@ -1,0 +1,169 @@
+/* Dashboard Layout Styles */
+
+:root{
+  --primary-color: #0e0e0e;
+  --secondary-color: #9DD8D4;
+  --text-color: #ffffff;
+  --text-color-secondary: #b0b0b0;
+  --text-color-hover: #ffffff;
+  --font-primary: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --surface-1: #111111;
+  --surface-2: #151515;
+  --border-color: rgba(255,255,255,0.08);
+  --muted: rgba(255,255,255,0.06);
+}
+
+.ds-app {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 64px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  min-height: 100vh;
+  color: var(--text-color);
+}
+
+.ds-sidebar {
+  grid-area: sidebar;
+  background: var(--surface-1);
+  backdrop-filter: blur(8px);
+  border-right: 1px solid var(--border-color);
+  padding: 20px 16px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.ds-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.ds-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ds-nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--text-color-secondary);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ds-nav a.active,
+.ds-nav a:hover {
+  background: rgba(157,216,212,0.18);
+  color: var(--text-color);
+}
+
+.ds-header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: var(--surface-1);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ds-header .ds-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-color);
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+.ds-header .ds-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  min-width: 220px;
+  color: var(--text-color);
+}
+
+.ds-header .ds-search img { cursor: pointer; }
+
+.ds-header .ds-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ds-content {
+  grid-area: content;
+  padding: 24px;
+}
+
+/* Cards layout helpers */
+.ds-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.ds-grid-3 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.ds-grid-2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .ds-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .ds-grid-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Generic card */
+.ds-card {
+  background: #fff;
+  background: var(--surface-2);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+/* Soft surfaces using theme */
+.surface-primary {
+  background: var(--primary-color);
+}
+.surface-secondary {
+  background: var(--secondary-color);
+}
+
+/* Sidebar behavior on small screens */
+@media (max-width: 991px) {
+  .ds-app {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content";
+  }
+  .ds-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 1000;
+    display: block;
+  }
+  .ds-app.sidebar-open .ds-sidebar { transform: translateX(0); }
+}
+
+
