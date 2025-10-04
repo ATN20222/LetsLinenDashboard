@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/images/favicon.svg">
     <title>Order Details - LET’S LINEN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/Layout.css">
     <link rel="stylesheet" href="../css/import.css">
@@ -37,8 +38,8 @@
             </div>
         </header>
         <main class="ds-content">
-            <div class="container">
-                <a href="./orders.html" class="back-link" style="margin-bottom:12px;display:inline-block;" data-aos="fade-right">← Back to Orders</a>
+            <div class="container mx-auto px-4">
+                <a href="./orders.html" class="back-link inline-block mb-3" data-aos="fade-right">← Back to Orders</a>
                 <div class="ds-grid ds-grid-2 mb-4">
                     <div class="ds-card" data-aos="fade-up">
                         <h3 class="mb-2">Order Summary</h3>
@@ -46,7 +47,7 @@
                     </div>
                     <div class="ds-card" data-aos="fade-up" data-aos-delay="100">
                         <h3 class="mb-2">Status</h3>
-                        <div style="display:flex;gap:10px;align-items:center;">
+                        <div class="flex gap-2 items-center">
                             <select id="statusSelect">
                                 <option>Pending</option>
                                 <option>Processing</option>

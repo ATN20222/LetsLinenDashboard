@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function renderSummary(o) {
     summaryEl.innerHTML = '' +
-      '<div style="margin-bottom:6px;">Order #: <strong>' + o.orderNumber + '</strong></div>' +
-      '<div style="margin-bottom:6px;">Customer: <strong>' + o.customer + '</strong></div>' +
-      '<div style="margin-bottom:6px;">Date: <strong>' + o.date + '</strong></div>' +
+      '<div class="mb-1.5">Order #: <strong>' + o.orderNumber + '</strong></div>' +
+      '<div class="mb-1.5">Customer: <strong>' + o.customer + '</strong></div>' +
+      '<div class="mb-1.5">Date: <strong>' + o.date + '</strong></div>' +
       '<div>Total: <strong>$' + o.total + '</strong></div>';
   }
 

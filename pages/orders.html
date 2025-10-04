@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/images/favicon.svg">
     <title>Orders - LET’S LINEN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/Layout.css">
     <link rel="stylesheet" href="../css/import.css">
@@ -38,8 +39,8 @@
             </div>
         </header>
         <main class="ds-content">
-            <div class="container">
-                <h2 class="mb-3" data-aos="fade-up">Orders</h2>
+            <div class="container mx-auto px-4">
+                <h2 class="mb-8" data-aos="fade-up">Orders</h2>
                 <div class="orders-toolbar" data-aos="fade-up" data-aos-delay="50">
                     <input id="searchInput" type="search" placeholder="Search by order # or customer">
                     <select id="statusFilter">
@@ -50,7 +51,7 @@
                         <option>Delivered</option>
                         <option>Cancelled</option>
                     </select>
-                    <button id="loadDemo" style="padding:8px 12px;border-radius:10px;border:1px solid var(--border-color);background:var(--surface-2);color:var(--text-color);">Load demo data</button>
+                    <button id="loadDemo" class="px-3 py-2 rounded-[10px] border" style="border-color: var(--border-color); background: var(--surface-2); color: var(--text-color);">Load demo data</button>
                 </div>
                 <div class="orders-table-wrapper" data-aos="fade-up" data-aos-delay="100"><div id="ordersTable"></div></div>
             </div>
