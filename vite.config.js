@@ -19,6 +19,7 @@ export default defineConfig({
       "@js": resolve(__dirname, "./src/assets/js"),
       "@css": resolve(__dirname, "./src/assets/css"),
       "@img": resolve(__dirname, "./src/assets/img"),
+      "@icons": resolve(__dirname, "./src/assets/icons"),
       "@audio": resolve(__dirname, "./src/assets/audio"),
       "@json": resolve(__dirname, "./src/assets/json"),
     },

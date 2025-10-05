@@ -1,0 +1,22 @@
+/* Header-only styles using Tailwind utilities and theme tokens */
+
+.ds-header {
+  @apply [grid-area:header] flex items-center justify-between px-5 bg-surface-1 backdrop-blur border-b border-current/10;
+}
+
+.ds-header .ds-search {
+  @apply flex items-center gap-2 bg-surface-2 border border-current/10 px-[10px] py-2 rounded-xl;
+}
+
+.ds-header .ds-search input {
+  @apply border-0 outline-none bg-transparent min-w-[220px] text-light;
+}
+
+.ds-header .ds-search img { 
+  @apply cursor-pointer pointer-events-auto; 
+}
+
+.ds-header .ds-actions {
+  @apply flex items-center gap-[10px];
+}
+

@@ -13,6 +13,7 @@
     "vite": "^7.1.7"
   },
   "dependencies": {
+    "chart.js": "^4.4.6",
     "@tailwindcss/vite": "^4.1.14",
     "tabulator-tables": "^6.3.1",
     "tailwindcss": "^4.1.14",

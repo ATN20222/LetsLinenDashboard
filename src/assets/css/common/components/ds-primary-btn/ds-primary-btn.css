@@ -1,0 +1,8 @@
+.ds-card button {
+    @apply px-3 py-2 rounded-[10px] border border-current/10
+    bg-secondary text-dark transition duration-150 ease-in-out;
+  }
+  
+  .ds-card button:hover {
+    @apply brightness-105;
+  }

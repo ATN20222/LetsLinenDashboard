@@ -1,6 +1,25 @@
+/* Chart wrappers: ensure charts have a height and canvas fills container */
+
+.charts-grid {
+  @apply grid gap-4 md:grid-cols-2;
+}
+
+.chart-card {
+  @apply bg-surface-2 border border-border-primary rounded-2xl p-4;
+}
+
+.chart-wrapper {
+  @apply relative w-full h-[360px];
+}
+
+.chart-wrapper canvas {
+  @apply absolute inset-0 w-full h-full;
+}
 .kpi-card {
-  @apply grid grid-cols-[auto_1fr_auto] items-center gap-3 p-4 border border-current/10 rounded-2xl;
-  @apply bg-gradient-to-b from-surface-2 to-surface-3 mb-10;
+  @apply grid grid-cols-[auto_1fr_auto] items-center gap-3 p-4 border border-current/10 rounded-2xl bg-surface-2;
+}
+.kpi-cards-grid{
+  @apply mb-10;
 }
 
 .kpi-icon {
@@ -8,7 +27,7 @@
 }
 
 .kpi-content h4 {
-  @apply text-[14px] font-medium;
+  @apply text-[14px] font-medium text-text-secondary;
 }
 
 .kpi-value {

@@ -26,7 +26,7 @@
 }
 
 body {
-  @apply font-inter relative m-0 box-border w-screen h-screen overflow-hidden scroll-smooth bg-surface-1;
+  @apply font-inter relative m-0 box-border w-screen h-screen overflow-x-hidden scroll-smooth bg-surface-1;
 }
 
 img {

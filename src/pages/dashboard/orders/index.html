@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Odlica" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/favicon.svg" />
+    <title>LET'S LINEN . Dashboard</title>
+  </head>
+  <body class="spinner">
+    
+    <div class="ds-app">
+      
+      <!-- Sidebar -->
+    <aside id="sidebar" class="ds-sidebar">
+        <div class="ds-brand">
+            <img src="/src/assets/img/Logo.svg" alt="Logo" width="28" height="28">
+            <span>LET’S LINEN</span>
+        </div>
+        <nav class="ds-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="#" class="active">Orders</a>
+            <a href="./pages/products.html">Products</a>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header class="ds-header">
+        <div class="ds-search">
+            <img id="sidebarToggle" src="/src/assets/icons/bars-white.svg" alt="menu" width="18" height="18" aria-controls="sidebar" aria-expanded="false">
+            <input type="text" placeholder="Search..." aria-label="Search">
+        </div>
+        <div class="ds-actions">
+            <img src="/src/assets/icons/user-white.svg" alt="profile" width="24" height="24">
+        </div>
+    </header>
+
+    <main class="ds-content  !p-10">
+        <div class="overflow-x-auto rounded-xl">
+          <div class="table">
+          <div class="header">
+            <h6>Orders table</h6>
+            <div class="table-header__actions">
+              <button id="filters-btn" class="main-btn">
+                <i class="fi fi-sr-settings-sliders"></i> Filters
+              </button>
+            </div>
+          </div>
+          <div id="ordersTable"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/assets/js/pages/dashboard/orders/_orders.js"></script>
+    <script type="module" src="/src/assets/js/pages/dashboard/_dashboard.js"></script>
+  </body>
+</html>

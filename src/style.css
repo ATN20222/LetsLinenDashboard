@@ -31,6 +31,13 @@
   --color-surface-1: #111111;
   --color-surface-2: #151515;
   --color-surface-3: hsl(rgba(21, 21, 21, 0.85));
+
+  /* Status */
+  --color-pending: #FF9800;
+  --color-processing: #2196F3;
+  --color-shipped: #4CAF50;
+  --color-delivered: #9C27B0;
+  --color-cancelled: #F44336;
 }
 
 @custom-variant child {
