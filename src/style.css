@@ -22,6 +22,7 @@
 
   /* Text */
   --color-text-secondary: #b0b0b0;
+  --color-danger: #e74c3c;
   --color-muted: hsl(rgba(255, 255, 255, 0.06));
 
   /* Border */

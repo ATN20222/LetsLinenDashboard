@@ -1,0 +1,32 @@
+@import "./ds-upload-dropzone.css";
+.ds-form-grid {
+  @apply grid gap-3;
+}
+
+@media (min-width: 768px) {
+  .ds-form-grid {
+    @apply grid-cols-2;
+  }
+}
+
+.ds-form-control {
+  @apply bg-surface-2 text-text-secondary border border-current/10 rounded-[10px] px-3 py-2.5;
+}
+
+.ds-form-field {
+  @apply flex flex-col;
+}
+
+.ds-form-is-invalid {
+  @apply border-danger outline-none;
+}
+
+.ds-form-field-error {
+  @apply text-danger text-[12px] mt-1;
+}
+
+.ds-form-actions {
+  @apply flex gap-[10px];
+}
+
+

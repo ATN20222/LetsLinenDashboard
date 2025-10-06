@@ -1,0 +1,19 @@
+.ds-modal-backdrop {
+    @apply fixed inset-0 bg-black/50 grid place-items-center z-[2000];
+}
+
+.ds-modal {
+    @apply bg-surface-2 text-white border border-current/10 rounded-[14px] w-[min(480px,92vw)] shadow-[0_10px_30px_rgba(0,0,0,0.35)];
+}
+
+.ds-modal-header {
+    @apply px-4 py-[14px] border-b border-current/10 font-semibold;
+}
+
+.ds-modal-body {
+    @apply p-4 text-white;
+}
+
+.ds-modal-actions {
+    @apply flex justify-end gap-[10px] px-4 py-3 border-t border-current/10;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Odlica" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/favicon.svg" />
+    <title>LET'S LINEN . Dashboard</title>
+  </head>
+  <body class="spinner">
+    
+    <div class="ds-app">
+      
+      <!-- Sidebar -->
+    <aside id="sidebar" class="ds-sidebar">
+        <div class="ds-brand">
+            <img src="/src/assets/img/Logo.svg" alt="Logo" width="28" height="28">
+            <span>LET’S LINEN</span>
+        </div>
+        <nav class="ds-nav">
+            <a href="../index.html">Dashboard</a>
+            <a href="../orders/index.html">Orders</a>
+            <a href="#" class="active">Products</a>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header class="ds-header">
+        <div class="ds-search">
+            <img id="sidebarToggle" src="/src/assets/icons/bars-white.svg" alt="menu" width="18" height="18" aria-controls="sidebar" aria-expanded="false">
+            <input type="text" placeholder="Search..." aria-label="Search">
+        </div>
+        <div class="ds-actions">
+            <img src="/src/assets/icons/logout.svg" alt="profile" width="24" height="24">
+        </div>
+    </header>
+
+    <main class="ds-content !p-10">     
+        <div class="container mx-auto px-4">
+            <h2 class="!mb-3" data-aos="fade-up">Add Product</h2>
+            <form id="productForm" class="ds-form-grid" data-aos="fade-up" data-aos-delay="50">
+                <div class="ds-form-field"><input class="ds-form-control" name="name" placeholder="Product name" required></div>
+                <div class="ds-form-field"><input class="ds-form-control" name="sku" placeholder="SKU" required></div>
+                <div class="ds-form-field"><input class="ds-form-control" name="category" placeholder="Category" required></div>
+                <div class="ds-form-field"><input class="ds-form-control" name="stock" placeholder="Stock" type="number" min="0" value="" required></div>
+                <div class="ds-form-field"><input class="ds-form-control" name="price" placeholder="Base price ($)" type="number" step="0.01" min="0" required></div>
+            </form>
+            <div class="ds-card mt-3" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="!mb-2">Images</h3>
+                <label class="ds-form-upload-dropzone">
+                  <input id="imageInput" type="file" multiple accept="image/*">
+                  <span class="ds-form-upload-hint">Drag & drop images here or</span>
+                  <span class="ds-form-upload-btn ds-secondary-btn">Choose Files</span>
+                </label>
+                <div id="imagesPreview" class="ds-form-images-grid !mt-2"></div>
+            </div>
+            <div class="ds-card !mt-3" data-aos="fade-up" data-aos-delay="150">
+                <div class="ds-form-variants">
+                    <div class="ds-form-variants-header">
+                        <h3>Variants (Color + Size + Price)</h3>
+                        <button id="addVariant" class="ds-secondary-btn" type="button">Add Variant</button>
+                    </div>
+                    <div id="variantsList" class="ds-form-variants-list"></div>
+                </div>
+            </div>
+            <div class="ds-form-actions !mt-3">
+                <a class="ds-secondary-btn" href="./index.html">Cancel</a>
+                <button id="saveProduct" class="ds-primary-btn">Save Product</button>
+            </div>
+        </div>
+      </main>
+    </div>
+
+
+
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/assets/js/pages/dashboard/products/add-product.js"></script>
+    <script type="module" src="/src/assets/js/pages/dashboard/_dashboard.js"></script>
+  </body>
+</html>

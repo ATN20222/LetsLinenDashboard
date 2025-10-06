@@ -12,13 +12,9 @@
 }
 
 /* Details page controls */
-.ds-card select {
-  @apply bg-surface-2 border border-current/10 rounded-[10px] px-[10px] py-2;
-}
+
 /* === Generic Card === */
-.ds-card {
-  @apply bg-surface-2 border border-current/10 rounded-2xl p-4 mb-4 mt-4;
-}
+
 
 
 .back-link {

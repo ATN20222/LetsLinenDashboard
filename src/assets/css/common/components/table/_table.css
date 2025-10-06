@@ -5,10 +5,10 @@
   @apply relative w-full overflow-hidden border-none bg-transparent p-0 md:min-w-96;
 }
 
-.tabulator .tabulator-tableholder .tabulator-table,
+/* .tabulator .tabulator-tableholder .tabulator-table,
 .tabulator-row.tabulator-row-even {
   @apply w-full bg-transparent;
-}
+} */
 
 .tabulator-row {
   @apply xs:w-full w-max border-b border-solid border-current/10 text-light !py-1 !bg-current/5;
@@ -386,6 +386,9 @@
 .tabulator-row-odd{
   @apply !bg-surface-2;
 }
+.tabulator-row-even{
+  @apply !bg-surface-1;
+}
 .table .header {
   @apply flex items-center justify-between border-b border-solid !border-current/20 px-6 py-4;
 }
@@ -396,4 +399,24 @@
 
 .table h6 ~ p {
   @apply font-inter mt-1.5 text-xs text-black/60;
+}
+@media (max-width: 768px) {
+  .table-wrapper .tabulator {
+    min-width: 100%;
+  }
+
+  
+
+  .table ,
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
+    display: block;
+  }
+
+
+
+
 }

@@ -33,7 +33,9 @@
 .surface-secondary {
   @apply !bg-surface-2;
 }
-
+.ds-link {
+  @apply text-secondary cursor-pointer transition duration-150 ease-in-out hover:underline hover:brightness-105;
+}
 /* === Sidebar behavior (mobile) === */
 @media (max-width: 991px) {
   .ds-app {

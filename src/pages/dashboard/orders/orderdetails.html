@@ -20,7 +20,7 @@
         <nav class="ds-nav">
             <a href="../index.html">Dashboard</a>
             <a href="#" class="active">Orders</a>
-            <a href="./pages/products.html">Products</a>
+            <a href="/src/pages/dashboard/products/index.html">Products</a>
         </nav>
     </aside>
 
@@ -31,7 +31,7 @@
             <input type="text" placeholder="Search..." aria-label="Search">
         </div>
         <div class="ds-actions">
-            <img src="/src/assets/icons/user-white.svg" alt="profile" width="24" height="24">
+            <img src="/src/assets/icons/logout.svg" alt="profile" width="24" height="24">
         </div>
     </header>
 
@@ -59,21 +59,24 @@
                             <option>Delivered</option>
                             <option>Cancelled</option>
                         </select>
-                        <button id="saveStatus">Save</button>
+                        <button id="saveStatus" class="ds-primary-btn">Save</button>
                     </div>
                     <div id="statusMessage" class="muted mt-2"></div>
                 </div>
             </div>
 
             <div class="ds-card" data-aos="fade-up" data-aos-delay="150">
-                <h3 class="mb-2">Items</h3>
-                <div id="itemsList" class="muted">No items demo for now.</div>
+                <h3 class="!mb-2">Items</h3>
+                <div id="itemsList" class="muted">
+                   
+                </div>
             </div>
         </div>
     </main>
     </div>
 
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/assets/js/pages/dashboard/orders/_orders.js"></script>
     <script type="module" src="/src/assets/js/pages/dashboard/_dashboard.js"></script>
   </body>
 </html>

@@ -1,0 +1,3 @@
+.ds-danger-btn {
+  @apply px-[14px] py-[10px] rounded-[10px] border border-white/20 bg-transparent text-danger cursor-pointer transition duration-150 ease-in-out;
+}
