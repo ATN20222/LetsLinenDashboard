@@ -1,0 +1,21 @@
+.bedding-section {
+  @apply pb-[100px] overflow-hidden;
+}
+.bedding-card {
+  @apply w-full cursor-pointer relative overflow-hidden mb-[30px];
+}
+.bedding-card-image {
+  @apply w-full max-h-[400px] mb-[10px] overflow-hidden;
+}
+.bedding-card-image img {
+  @apply w-full h-full object-cover object-center transition-all duration-300 ease-in-out;
+}
+.bedding-card:hover .bedding-card-image img {
+  @apply scale-105 z-10;
+}
+.bedding-card:hover .bedding-card-title {
+  @apply text-landing-text-hover;
+}
+.bedding-card-title {
+  @apply font-poppins text-[18px] font-bold text-landing-text leading-[1.2] transition-all duration-300 ease-in-out;
+}

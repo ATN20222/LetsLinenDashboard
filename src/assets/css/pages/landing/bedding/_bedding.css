@@ -1,0 +1,5 @@
+@reference "@/style.css";
+@import "./bedding-card.css";
+.bedding-section {
+    @apply pb-[100px] overflow-hidden;
+  }

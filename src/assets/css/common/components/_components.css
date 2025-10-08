@@ -1,6 +1,7 @@
 @import "./button/_button.css";
 /* @import "./form/_form.css"; */
-/* @import "./navbar/_navbar.css"; */
+@import "./navbar/_navbar.css";
+@import "./footer/_footer.css";
 @import "./header/_header.css";
 @import "./sidebar/_sidebar.css";
 @import "./loader/_loader.css";
@@ -11,3 +12,8 @@
 @import "./ds-modal/_ds-modal.css";
 @import "./ds-form/_ds-form.css";
 @import "./ds-card/_ds-card.css";
+@import "./splide-slider/_splide-slider.css";
+@import "./product-card/_product-card.css";
+@import "./special-offers/_special-offers.css";
+@import "./products-top/_products-top.css";
+@import "./primary-btn/_primary-btn.css";

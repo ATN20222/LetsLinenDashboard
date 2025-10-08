@@ -1,0 +1,73 @@
+.profile-section {
+    @apply py-[60px] px-0;
+}
+
+.profile-header h1 {
+    @apply text-[32px] font-semibold text-landing-text;
+}
+
+.profile-subtitle {
+    @apply text-landing-text-secondary mt-2;
+}
+
+.profile-card {
+    @apply mt-6 border border-black rounded-[14px] bg-landing-primary p-[18px];
+}
+
+.profile-row {
+    @apply flex justify-between items-center;
+}
+
+.profile-row .label {
+    @apply text-landing-text-secondary;
+}
+
+.profile-row .value {
+    @apply font-semibold text-landing-text;
+}
+
+.separator {
+    @apply h-px bg-black my-[14px];
+}
+
+.password-form .form-group {
+    @apply mb-3;
+}
+
+.password-form label {
+    @apply block mb-[6px] text-landing-text;
+}
+
+.password-form input {
+    @apply w-full border border-black rounded-[10px] px-3 py-[10px] bg-transparent text-landing-text outline-none;
+}
+
+.password-form .error {
+    @apply text-red-600 text-xs min-h-[14px] block;
+}
+
+
+.form-note {
+    @apply text-landing-text-secondary text-xs mt-2;
+}
+
+.form-message {
+    @apply mt-3 px-3 py-[10px] border border-black rounded-[10px];
+}
+
+.form-message.success {
+    @apply bg-green-100;
+}
+
+.form-message.error {
+    @apply bg-red-100;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        @apply p-[14px];
+    }
+}
+
+

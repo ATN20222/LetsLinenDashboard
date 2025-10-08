@@ -39,6 +39,16 @@
   --color-shipped: #4CAF50;
   --color-delivered: #9C27B0;
   --color-cancelled: #F44336;
+
+  /* Landing */
+  --color-landing-primary: #F1EFE0;
+  --color-landing-secondary: #9DD8D4;
+  --color-landing-text: #000;
+  --color-landing-text-secondary: #686363;
+  --color-landing-text-hover: #313131;
+
+  
+
 }
 
 @custom-variant child {

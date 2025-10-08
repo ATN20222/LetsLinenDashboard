@@ -1,0 +1,192 @@
+
+.footer {
+  @apply bg-landing-secondary pt-[60px] pb-0 font-poppins text-landing-text;
+}
+
+.footer .footer-content {
+  @apply grid grid-cols-[2fr_1fr_1fr_1.5fr] gap-10 mb-10;
+}
+
+.footer .footer-column {
+  @apply flex flex-col;
+}
+
+/* Brand & Social Column */
+.footer .footer-brand {
+  @apply gap-[30px];
+}
+
+.footer .footer-logo h2 {
+  @apply text-[2.5rem] font-normal m-0 mb-[10px] leading-[1.2];
+}
+
+.footer .logo-bold {
+  @apply font-bold;
+}
+
+.footer .footer-tagline {
+  @apply text-[0.9rem] font-normal m-0 opacity-80;
+}
+
+.footer .footer-social h3 {
+  @apply text-base font-bold m-0 mb-[15px] uppercase;
+}
+
+.footer .social-links {
+  @apply list-none p-0 m-0 flex flex-col gap-2;
+}
+
+.footer .social-link {
+  @apply text-landing-text no-underline text-[0.9rem] font-normal transition-opacity duration-300 ease-in-out;
+}
+.footer .social-link:hover {
+  @apply opacity-70;
+}
+
+.footer .arrow {
+  @apply ml-[5px] text-[0.8rem];
+}
+
+/* Company Column */
+.footer .footer-company h3 {
+  @apply text-base font-bold m-0 mb-[15px] uppercase;
+}
+
+.footer .footer-links {
+  @apply list-none p-0 m-0;
+}
+
+.footer .footer-link {
+  @apply text-landing-text no-underline text-[0.9rem] font-normal transition-opacity duration-300 ease-in-out;
+}
+.footer .footer-link:hover {
+  @apply opacity-70;
+}
+
+/* Mission Column */
+.footer .footer-mission h3 {
+  @apply text-base font-bold m-0 mb-[15px] uppercase;
+}
+
+.footer .footer-inspiration {
+  @apply text-base font-bold m-0 uppercase;
+}
+
+/* Contact Column */
+.footer .footer-contact h3 {
+  @apply text-base font-bold m-0 mb-[15px] uppercase;
+}
+
+.footer .contact-links {
+  @apply list-none p-0 m-0 flex flex-col gap-2;
+}
+
+.footer .contact-link {
+  @apply text-landing-text no-underline text-[0.9rem] font-normal transition-opacity duration-300 ease-in-out;
+}
+.footer .contact-link:hover {
+  @apply opacity-70;
+}
+
+/* Footer Bottom */
+.footer .footer-bottom {
+  @apply pt-[30px] pb-[40px];
+}
+
+.footer .footer-separator {
+  @apply h-px bg-landing-text mb-5 opacity-30;
+}
+
+.footer .footer-bottom-content {
+  @apply flex justify-between items-center;
+}
+
+.footer .copyright,
+.footer .privacy-policy {
+  @apply text-[0.8rem] font-normal m-0 opacity-80;
+}
+
+.footer .privacy-policy {
+  @apply cursor-pointer transition-opacity duration-300 ease-in-out;
+}
+.footer .privacy-policy:hover {
+  @apply opacity-100;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .footer .footer-content {
+    @apply grid-cols-[2fr_1fr_1fr_1.2fr] gap-[30px];
+  }
+  .footer .footer-logo h2 {
+    @apply text-[2.2rem];
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    @apply pt-[50px] pb-0;
+  }
+  .footer .footer-content {
+    @apply grid-cols-2 gap-10;
+  }
+  .footer .footer-brand {
+    grid-column: 1 / -1;
+    @apply mb-5;
+  }
+  .footer .footer-logo h2 {
+    @apply text-[2rem];
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    @apply pt-[40px] pb-0;
+  }
+  .footer .footer-content {
+    @apply grid-cols-1 gap-[30px];
+  }
+  .footer .footer-brand {
+    grid-column: 1;
+    @apply mb-0;
+  }
+  .footer .footer-logo h2 {
+    @apply text-[1.8rem];
+  }
+  .footer .footer-bottom-content {
+    @apply flex-col gap-[10px] text-center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    @apply pt-[30px] pb-0;
+  }
+  .footer .footer-content {
+    @apply gap-[25px];
+  }
+  .footer .footer-logo h2 {
+    @apply text-[1.6rem];
+  }
+  .footer .footer-tagline {
+    @apply text-[0.8rem];
+  }
+  .footer .footer-social h3,
+  .footer .footer-company h3,
+  .footer .footer-mission h3,
+  .footer .footer-contact h3 {
+    @apply text-[0.9rem];
+  }
+  .footer .social-link,
+  .footer .footer-link,
+  .footer .contact-link {
+    @apply text-[0.8rem];
+  }
+  .footer .footer-bottom {
+    @apply pt-[20px] pb-[30px];
+  }
+  .footer .copyright,
+  .footer .privacy-policy {
+    @apply text-[0.7rem];
+  }
+}

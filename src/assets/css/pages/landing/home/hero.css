@@ -1,0 +1,15 @@
+/* Hero Section */
+.hero-section {
+  @apply pt-[100px] pb-[100px] overflow-hidden;
+}
+
+.hero-section img {
+  @apply scale-110;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    @apply pt-[50px] pb-[50px];
+  }
+}

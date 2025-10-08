@@ -1,0 +1,9 @@
+@reference "@/style.css";
+@import "./bedding/_bedding.css";
+@import "./products/_products.css";
+@import "./home/_home.css";
+@import "./colors/_colors.css";
+@import "./favorites/_favorites.css";
+@import "./cart/_cart.css";
+@import "./profile/_profile.css";
+@import "./product/_product.css";

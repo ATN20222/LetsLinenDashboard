@@ -1,0 +1,1 @@
+import "@css/pages/landing/favorites/_favorites.css";

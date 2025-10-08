@@ -1,0 +1,80 @@
+.favorites-section {
+    @apply py-[60px] px-0;
+}
+
+.favorites-header h1 {
+    @apply text-[32px] font-semibold text-landing-text;
+}
+
+.favorites-subtitle {
+    @apply text-landing-text-secondary mt-2;
+}
+
+.favorites-grid {
+    @apply mt-[30px] grid grid-cols-4 gap-4;
+}
+
+.favorite-card {
+    @apply border border-black rounded-[14px] bg-landing-primary overflow-hidden flex flex-col;
+}
+
+.favorite-image {
+    @apply w-full h-[220px] overflow-hidden;
+}
+
+.favorite-image img {
+    @apply w-full h-full object-cover;
+}
+
+.favorite-info {
+    @apply px-3 pt-3 pb-0;
+}
+
+.favorite-title {
+    @apply text-base font-semibold text-landing-text;
+}
+
+.favorite-price {
+    @apply text-sm text-landing-text-secondary mt-[6px];
+}
+
+.favorite-actions {
+    @apply p-3 flex justify-between items-center gap-[10px];
+}
+
+.view-item {
+    @apply text-landing-text border border-black px-[10px] py-2 rounded-[10px] transition-opacity duration-300 ease-in-out hover:opacity-80;
+}
+
+.remove-favorite {
+    @apply bg-transparent border border-black rounded-[10px] px-3 py-2 cursor-pointer text-landing-text transition-opacity duration-300 ease-in-out hover:opacity-70;
+}
+
+.favorites-empty {
+    @apply text-center py-[50px] px-0;
+}
+
+.browse-link {
+    @apply inline-block mt-[10px] text-landing-text border border-black px-3 py-[10px] rounded-[10px] transition-opacity duration-300 ease-in-out hover:opacity-80;
+}
+
+/* Responsive Grid System */
+@media (max-width: 1200px) {
+    .favorites-grid {
+        @apply grid-cols-3;
+    }
+}
+
+@media (max-width: 768px) {
+    .favorites-grid {
+        @apply grid-cols-2;
+    }
+}
+
+@media (max-width: 480px) {
+    .favorites-grid {
+        @apply grid-cols-1;
+    }
+}
+
+

@@ -5,3 +5,5 @@ Files inside this folder can contain global styles used in the project.
 
 /* @import "./reset.css"; */
 @import "./global.css";
+@import "./fonts.css";
+@import "./global-classes.css";

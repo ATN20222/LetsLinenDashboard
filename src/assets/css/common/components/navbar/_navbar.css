@@ -1,30 +1,112 @@
-/* Sticky navbar */
-.navbar {
-  @apply sticky top-0 z-10 flex h-[70px] shrink-0 items-center justify-between border-b border-solid border-[#F3F5F6] bg-white px-6;
-  @apply md:pl-8;
+/* stylelint-disable */
+nav{
+  @apply relative top-0 left-0 right-0 z-[1000] border-b border-black bg-[#F1EFE0] py-6;
 }
 
-.navbar-title {
-  @apply text-dark font-poppins text-base font-semibold;
-  @apply md:text-lg;
+.nav-links-container{
+  @apply flex items-center justify-between;
 }
-.navbar-title + p {
-  @apply mt-1 text-xs opacity-50;
+.nav-links{
+  @apply flex w-full items-center justify-between;
+}
+.nav-links li{
+  @apply list-none mx-4 text-center;
+}
+.nav-links li a{
+  @apply cursor-pointer font-poppins text-landing-text transition-colors duration-300 ease-in-out;
+}
+.nav-links li a:hover{
+  @apply text-[#313131];
+}
+.nav-links-icons{
+  @apply flex items-center justify-between gap-4;
+}
+.nav-links-icons img{
+  @apply cursor-pointer transition-opacity duration-300 ease-in-out w-[20px] min-w-[20px] pointer-events-auto;
+}
+.nav-links-icons img:hover{
+  @apply opacity-70;
 }
 
-.navbar-toggle {
-  @apply absolute z-30 h-7 w-7 cursor-pointer rounded-full border border-solid border-[#F3F5F6] bg-white;
-  top: 55px;
-  left: -16px;
-  overflow: visible !important;
-}
-
-.navbar-actions {
-  @apply flex items-center gap-2;
-  @apply md:gap-4;
-}
-
-.navbar-actions .alt-btn span {
+.bars-icon{
   @apply hidden;
-  @apply md:flex;
+}
+@media (max-width: 1400px) {
+  .nav-links li{
+    @apply mx-2;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-links li{
+    @apply text-[13px];
+  }
+}
+@media (max-width: 1100px) {
+  nav .custom-row{
+    @apply flex-col justify-center items-center ;
+   }
+
+   .nav-brand{
+    @apply flex justify-center items-center;
+   }
+}
+@media (max-width:990px) {
+  nav .custom-row{
+    @apply !flex-row flex-nowrap;
+   }
+   .nav-brand{
+    @apply flex justify-start items-center;
+   }
+  .nav-links {
+    @apply hidden;
+  }
+  .nav-links-container{
+    @apply justify-end;
+  }
+  .bars-icon{
+    @apply block;
+  }
+}
+
+/* Overlay for mobile menu */
+.nav-overlay{
+  @apply fixed inset-0 bg-black/40 opacity-0 invisible transition-opacity duration-300 ease-in-out z-[1500];
+}
+.nav-overlay.open{
+  @apply opacity-100 visible;
+}
+
+/* Side Drawer */
+.side-drawer{
+  @apply fixed top-0 right-0 h-screen w-[min(80vw,360px)] bg-[#F1EFE0] border-l border-black shadow-[-10px_0_30px_rgba(0,0,0,0.15)] translate-x-full transition-transform duration-[350ms] ease-in-out z-[1600] flex flex-col;
+}
+.side-drawer.open{
+  @apply translate-x-0;
+}
+
+.side-drawer-header{
+  @apply flex items-center justify-between py-4 px-5 border-b border-black;
+}
+.side-drawer-header img{
+  @apply h-7;
+}
+.drawer-close{
+  @apply bg-transparent border-0 text-[#000] text-[28px] cursor-pointer leading-none;
+}
+
+.drawer-links{
+  @apply list-none m-0 py-4 px-3 flex flex-col gap-1 overflow-y-auto;
+}
+.drawer-links li{
+  @apply m-0 text-left;
+}
+.drawer-links a{
+  @apply block p-3 text-[#000] no-underline font-poppins rounded-lg transition-colors duration-200 ease-in-out;
+}
+.drawer-links a:hover{
+  @apply bg-[rgba(255,255,255,0.08)] opacity-90;
+}
+/* Prevent body scroll when menu is open */
+body.menu-open{
+  @apply overflow-hidden;
 }

@@ -1,0 +1,109 @@
+
+/* ===== Our Products Section ===== */
+.our-products-section {
+    @apply pt-[100px] pb-[100px];
+  }
+  
+  .our-products-header {
+    @apply flex justify-between items-center;
+  }
+  
+  .our-products-content {
+    @apply my-10; 
+  }
+  
+  .our-products-header-browse {
+    @apply text-landing-text font-normal text-[16px] cursor-pointer transition-all duration-300 ease-in-out no-underline;
+  }
+  
+  .our-products-header-browse:hover {
+    @apply text-landing-text-hover; 
+  }
+  
+  .our-products-header-title {
+    @apply text-landing-text font-normal pt-2 text-[32px];
+  }
+  
+  .our-products-header-browse-container {
+    @apply flex justify-end items-center;
+  }
+  
+  /* ===== Responsive Adjustments ===== */
+
+  /* max-width: 1200px */
+  @media (max-width: 1200px) {
+    .our-products-header-title {
+      @apply text-[2.2rem];
+    }
+    .product-image {
+      @apply h-[200px];
+    }
+    .product-title {
+      @apply text-[1rem];
+    }
+  }
+  
+  /* max-width: 992px */
+  @media (max-width: 992px) {
+    .our-products-section {
+      @apply pt-[60px] pb-[60px];
+    }
+    .our-products-header-title {
+      @apply text-[2rem];
+    }
+    .product-image {
+      @apply h-[180px];
+    }
+    .product-title {
+      @apply text-[0.95rem];
+    }
+    .product-price {
+      @apply text-[0.9rem];
+    }
+  }
+  
+  /* max-width: 768px */
+  @media (max-width: 768px) {
+    .our-products-section {
+      @apply pt-[50px] pb-[50px];
+    }
+    .our-products-header-title {
+      @apply text-[1.8rem];
+    }
+    .our-products-header-browse {
+      @apply text-[14px];
+    }
+    .product-image {
+      @apply h-[250px];
+    }
+    .product-title {
+      @apply text-[1.1rem];
+    }
+    .product-price {
+      @apply text-[1rem];
+    }
+  }
+  
+  /* max-width: 576px */
+  @media (max-width: 576px) {
+    .our-products-header-title {
+      @apply text-[1.5rem];
+    }
+    .product-image {
+      @apply h-[220px];
+    }
+    .product-title {
+      @apply text-[1rem];
+    }
+    .product-price {
+      @apply text-[0.9rem];
+    }
+  }
+  
+  /* max-width: 480px */
+  @media (max-width: 480px) {
+    .our-products-header-title {
+      @apply text-[1rem];
+    }
+  }
+  

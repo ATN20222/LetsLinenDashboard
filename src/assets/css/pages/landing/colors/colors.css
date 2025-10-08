@@ -1,0 +1,50 @@
+.colors-header {
+  @apply font-poppins text-[48px] font-bold text-landing-text uppercase leading-[1.2] text-center pt-[30px] pb-[30px];
+}
+.colors-section {
+  @apply pt-[100px] pb-[100px];
+}
+.colors-content {
+  @apply flex justify-center items-center flex-wrap gap-[5px];
+}
+.color-card {
+  width: calc(100% / 10 - 5px);
+  @apply h-[200px] rounded-[20px] cursor-pointer transition-all duration-300 ease-in-out z-[1] relative ;
+  background-color: var(--card-color, #F0F0F0);
+}
+.color-card:hover {
+  @apply scale-110 z-10;
+}
+.color-card::after {
+  content: attr(data-color-name);
+  @apply absolute left-1/2 bg-black/80 text-white px-3 py-2 rounded-[6px] text-[12px] font-medium whitespace-nowrap opacity-0 invisible transition-all duration-300 ease-in-out pointer-events-none z-[1000];
+  bottom: -40px;
+  transform: translateX(-50%);
+}
+.color-card:hover::after {
+  @apply opacity-100 visible;
+  bottom: -35px;
+}
+@media screen and (max-width: 990px) {
+  .color-card {
+    width: calc(100% / 5 - 5px);
+  }
+}
+@media screen and (max-width: 580px) {
+  .color-card {
+    width: calc(100% / 3 - 5px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .color-card {
+    width: calc(100% / 2 - 5px);
+  }
+  .colors-header {
+    @apply text-[32px];
+  }
+}
+@media screen and (max-width: 768px) {
+  .colors-section {
+    @apply pt-[50px] pb-[50px];
+  }
+}

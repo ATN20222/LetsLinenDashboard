@@ -1,0 +1,133 @@
+.cart-section {
+    @apply py-[60px] px-0;
+}
+
+.cart-header h1 {
+    @apply text-[32px] font-semibold text-landing-text;
+}
+
+.cart-subtitle {
+    @apply text-landing-text-secondary mt-2;
+}
+
+.cart-grid {
+    @apply mt-[30px];
+}
+
+.cart-items {
+    @apply flex flex-col gap-[14px];
+}
+
+.cart-item {
+    @apply grid grid-cols-[120px_1fr_auto] items-center gap-4 p-[14px] border border-black rounded-[14px] bg-landing-primary;
+}
+.cart-item-image{
+    @apply max-h-[240px] overflow-hidden rounded-[10px];
+}
+.cart-item-image img {
+    @apply w-full h-auto ;
+}
+
+.cart-item-info .item-title {
+    @apply text-lg font-semibold text-landing-text;
+}
+
+.cart-item-info .item-variant {
+    @apply text-landing-text-secondary my-1 mb-[10px];
+}
+
+.item-actions {
+    @apply flex items-center gap-[14px];
+}
+
+.qty-control {
+    @apply inline-flex items-center border border-black rounded-[10px] overflow-hidden;
+}
+
+.qty-btn {
+    @apply bg-transparent border-0 px-3 py-2 text-landing-text cursor-pointer text-lg;
+}
+
+.qty-input {
+    @apply w-12 text-center border-0 bg-transparent text-landing-text text-base outline-none;
+}
+
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+    @apply appearance-none m-0;
+}
+
+.qty-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.remove-item {
+    @apply bg-transparent border border-black rounded-[10px] px-3 py-2 cursor-pointer text-landing-text transition-opacity duration-300 ease-in-out hover:opacity-70;
+}
+
+.cart-item-price {
+    @apply flex flex-col items-end gap-[6px];
+}
+
+.unit-price {
+    @apply text-landing-text-secondary;
+}
+
+.line-total {
+    @apply font-semibold text-landing-text;
+}
+
+.cart-summary {
+    @apply border border-black rounded-[14px] p-[18px] sticky top-5 bg-landing-primary;
+}
+
+.cart-summary h2 {
+    @apply text-[22px] mb-3 text-landing-text;
+}
+
+.summary-row {
+    @apply flex justify-between items-center py-2;
+}
+
+.summary-separator {
+    @apply h-px bg-black my-[10px];
+}
+
+.summary-row.total span:last-child {
+    @apply text-xl font-bold text-landing-text;
+}
+
+
+
+.summary-note {
+    @apply mt-2 text-landing-text-secondary text-xs text-center;
+}
+
+/* Responsive Design */
+@media (max-width: 990px) {
+    .cart-summary {
+        @apply static mt-4;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        @apply grid-cols-[90px_1fr_auto] p-3;
+    }
+    
+    .cart-summary {
+        @apply static mt-4;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-item {
+        @apply grid-cols-1 text-left;
+    }
+    
+    .cart-item-price {
+        @apply items-start;
+    }
+}
+
+

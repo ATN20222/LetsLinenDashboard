@@ -1,0 +1,5 @@
+@reference "@/style.css";
+@import "./hero.css";
+@import "./our-products.css";
+@import "./single-bed.css";
+@import "./story.css";

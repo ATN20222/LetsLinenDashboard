@@ -1,0 +1,8 @@
+/* Single Bed Section */
+.single-bed-section {
+    @apply pb-[100px] md:pb-[100px] pb-[50px] max-md:pb-[50px];
+}
+.single-bed-image {
+    @apply w-full h-full object-cover rounded-[10px];
+}
+/* Single Bed Section End */

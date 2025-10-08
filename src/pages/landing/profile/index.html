@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Odlica" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/favicon.svg" />
+    <!-- <link rel="stylesheet" href="/src/assets/css/pages/landing/cart/_cart.css" /> -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/assets/css/pages/landing/_landing.css" />
+    <!-- aos css -->
+
+    <title>LET'S LINEN</title>
+</head>
+
+<body class="spinner">
+
+    <!-- Navbar -->
+    <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+        <div class="custom-container">
+            <div class="custom-row">
+                <div class="custom-col-xl-2 custom-col-md-12  custom-col-4 custom-col-sm-4 nav-brand">
+                    <img src="/src/assets/img/Logo.svg" alt="logo" />
+                </div>
+                <div class="custom-col-xl-10 custom-col-md-12 custom-col-8 custom-col-sm-8 nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#">Bedding</a></li>
+                        <li><a href="#">Bath Products</a></li>
+                        <li><a href="#">Bedroom Essentials</a></li>
+                        <li><a href="#">Table Clothes</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Home Accessories</a></li>
+                        <li><a href="#">Lounge wear</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Fragrances</a></li>
+                    </ul>
+                    <div class="nav-links-icons">
+                        <a href="/pages/cart.html"><img src="/src/assets/icons/cart.svg" alt="cart" /></a>
+                        <a href="/pages/favorites.html"><img src="/src/assets/icons/Heart-filled.svg" alt="heart" /></a>
+                        <a href="/pages/profile.html"><img src="/src/assets/icons/user.svg" alt="user" /></a>
+                        <a><img class="bars-icon" src="/src/assets/icons/bars.svg" alt="bars" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+        <!-- Profile Section -->
+        <section class="profile-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+            <div class="custom-container">
+                <div class="profile-header">
+                    <h1>My Profile</h1>
+                    <p class="profile-subtitle">Manage your account and password</p>
+                </div>
+    
+                <div class="custom-row">
+                    <div class="custom-col-12">
+                        <div class="profile-card">
+                            <div class="profile-row">
+                                <span class="label">Email</span>
+                                <span id="profileEmail" class="value">user@example.com</span>
+                            </div>
+                            <div class="separator"></div>
+                            <form id="passwordForm" class="password-form" novalidate>
+                                <div class="form-group">
+                                    <label for="oldPassword">Old password</label>
+                                    <input id="oldPassword" type="password" required placeholder="Enter old password">
+                                    <small class="error" id="oldPasswordError"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPassword">New password</label>
+                                    <input id="newPassword" type="password" required placeholder="Enter new password" minlength="6">
+                                    <small class="error" id="newPasswordError"></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm new password</label>
+                                    <input id="confirmPassword" type="password" required placeholder="Re-enter new password">
+                                    <small class="error" id="confirmPasswordError"></small>
+                                </div>
+                                <button type="submit" class="primary-btn save-btn">Update Password ↗</button>
+                                <p class="form-note">Make sure your new password is at least 6 characters.</p>
+                                <div class="form-message" id="formMessage" role="alert" hidden></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Profile Section End -->
+    
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="custom-container">
+            <div class="footer-content">
+                <!-- Brand & Social Column -->
+                <div class="footer-column footer-brand">
+                    <div class="footer-logo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <h2>LET'S <span class="logo-bold">LINEN</span></h2>
+                        <p class="footer-tagline">SLEEP IN LINEN ... WAKE IN LUXURY</p>
+                    </div>
+                    <div class="footer-social" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                        <h3>FOLLOW US</h3>
+                        <ul class="social-links">
+                            <li><a href="#" class="social-link">INSTAGRAM <span class="arrow">↗</span></a></li>
+                            <li><a href="#" class="social-link">FACEBOOK <span class="arrow">↗</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Company Info Column -->
+                <div class="footer-column footer-company" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="300">
+                    <h3>OUR STORY</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">SPECIAL OFFERS</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mission & Inspiration Column -->
+                <div class="footer-column footer-mission" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="400">
+                    <h3>OUR MISSION & VISION</h3>
+                    <h3 class="footer-inspiration">OUR INSPIRATION</h3>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-delay="500">
+                    <h3>CONTACT</h3>
+                    <ul class="contact-links">
+                        <li><a href="#" class="contact-link">CALL <span class="arrow">↗</span></a></li>
+                        <li><a href="#" class="contact-link">INSTAGRAM <span class="arrow">↗</span></a></li>
+                        <li><a href="mailto:info@letslinen.com" class="contact-link">INFO@LETSLINEN.COM</a></li>
+                        <li><a href="tel:+201142706769" class="contact-link">+20 114 270 6769</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-separator"></div>
+                <div class="footer-bottom-content">
+                    <p class="copyright">©2025 LET'S LINEN</p>
+                    <p class="privacy-policy">PRIVACY POLICY</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <script type="module" src="/src/main.js"></script>
+    <!-- splide js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- aos js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- landing js -->
+    <script type="module" src="/src/assets/js/pages/landing/_landing.js"></script>
+</body>
+
+</html>

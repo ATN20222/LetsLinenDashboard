@@ -1,0 +1,1 @@
+import "@css/pages/landing/profile/_profile.css";

@@ -1,0 +1,1 @@
+import "@css/pages/landing/bedding/_bedding.css";

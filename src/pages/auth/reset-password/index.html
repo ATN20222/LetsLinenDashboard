@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Odlica" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/favicon.svg" />
+    <link rel="stylesheet" href="/src/assets/css/pages/auth/_auth.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- aos css -->
+
+    <title>LET'S LINEN</title>
+</head>
+
+<body class="spinner">
+        <div class="auth-container">
+            <div class="auth-left">
+                <div class="auth-top-text">
+                    <h1 class="auth-top-text-title">
+                        Reset Password
+                    </h1>
+                </div>
+                <div class="auth-form-container">
+                    <form class="auth-form" action="#" method="post" novalidate>
+                        
+                        <div class="form-field">
+                            <label for="password" class="form-label">New Password</label>
+                            <input id="password" name="password" type="password" class="form-input" placeholder="At least 8 characters" minlength="8" required>
+                        </div>
+                        <div class="form-field mb-3">
+                            <label for="confirm-password" class="form-label">Confirm New Password</label>
+                            <input id="confirm-password" name="confirm-password" type="password" class="form-input" placeholder="Same as password" minlength="8" required>
+                        </div>
+
+                        
+                        <button type="submit" class="primary-btn w-full">Reset Password</button>
+                        <div class="auth-divider"><span>Or</span></div>
+                        <p class="auth-bottom-text">Back to <a href="../login/index.html" class="auth-link">Sign in</a></p>
+                      
+                        
+                    </form>
+                    <div class="auth-copyright-text">
+                        © 2025 ALL RIGHTS RESERVED
+                    </div>
+                </div>
+            </div>
+            <div class="auth-right">
+                <img src="/src/assets/img/login-image.jpg" width="100%" height="100%" alt="login-image">
+
+            </div>
+        </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <!-- aos js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- landing js -->
+    <script type="module" src="/src/assets/js/pages/auth/reset-password/_reset-password.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* Story Section */
+.story-section {
+    @apply pb-[100px] md:pb-[100px] max-md:pb-[50px];
+}
+.story-image {
+    @apply w-full h-full object-cover rounded-[10px];
+}
+.story-title {
+    @apply pt-[30px] pb-[30px] font-poppins text-[32px] font-normal uppercase leading-[1.2] text-landing-text;
+}
+.story-title-bold {
+    @apply font-bold;
+}
+.story-description {
+    @apply font-poppins text-[16px] font-normal leading-[1.2] text-landing-text pr-[10%] pt-[20px] pb-[20px];
+}
+/* Story Section End */
