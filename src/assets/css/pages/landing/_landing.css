@@ -7,3 +7,6 @@
 @import "./cart/_cart.css";
 @import "./profile/_profile.css";
 @import "./product/_product.css";
+body{
+    @apply bg-landing-primary;
+}

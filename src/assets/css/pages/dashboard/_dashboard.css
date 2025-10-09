@@ -4,3 +4,7 @@
 @import "./layouts.css";
 @import "./orders.css";
 @import "./products.css";
+
+body{
+    @apply bg-surface-1;
+}

@@ -2,19 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
-    <title>dashboard</title>
+    <link rel="stylesheet" href="/src/startup.css" />
+    <title>LET'S LINEN</title>
   </head>
-  <body>
+  <body class="startup-body">
     <div id="app"></div>
-    <a class="text-green-600" href="/src/pages/dashboard/index.html">HOME</a>
-    <a class="text-green-600" href="/src/pages/landing/home/index.html">LANDING</a>
+    
+    <div class="startup-container">
+      <!-- Background Elements -->
+      <div class="startup-bg-gradient-1"></div>
+      <div class="startup-bg-gradient-2"></div>
+      <div class="startup-bg-gradient-3"></div>
+      
+      <div class="startup-content">
+        <div class="startup-logo-section">
+          <div class="startup-logo-container">
+            <img src="/src/assets/img/Logo.svg" alt="Logo" class="startup-logo-img">
+            <div class="startup-logo-glow"></div>
+          </div>
+          <h1 class="startup-title">LET'S LINEN</h1>
+          <p class="startup-subtitle">Building the future, one innovation at a time</p>
+        </div>
+        
+        <div class="startup-nav-buttons">
+          <a href="/src/pages/dashboard/index.html" class="startup-nav-btn startup-nav-btn-primary">
+            <span class="startup-btn-text">Dashboard</span>
+            <div class="startup-btn-glow"></div>
+            <div class="startup-btn-shine"></div>
+          </a>
+          
+          <a href="/src/pages/landing/home/index.html" class="startup-nav-btn startup-nav-btn-secondary">
+            <span class="startup-btn-text">Landing Page</span>
+            <div class="startup-btn-glow"></div>
+            <div class="startup-btn-shine"></div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="startup-floating-elements">
+        <div class="startup-floating-circle startup-circle-1"></div>
+        <div class="startup-floating-circle startup-circle-2"></div>
+        <div class="startup-floating-circle startup-circle-3"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

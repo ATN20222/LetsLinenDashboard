@@ -1,5 +1,5 @@
 body {
-    @apply bg-landing-primary min-h-screen overflow-x-hidden font-poppins;
+    @apply min-h-screen overflow-x-hidden font-poppins;
 
 }
 

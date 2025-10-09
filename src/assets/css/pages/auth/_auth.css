@@ -1,2 +1,5 @@
 @reference "@/style.css";
 @import "./auth.css";
+body {
+    @apply !bg-landing-primary;
+}

@@ -1,4 +1,31 @@
 document.addEventListener('DOMContentLoaded', function handleMobileMenuSetup() {
+    // Handle dropdown menu
+    var dropdownTrigger = document.querySelector('.nav-dropdown-trigger');
+    var dropdownMenu = document.querySelector('.nav-dropdown-menu');
+    
+    if (dropdownTrigger && dropdownMenu) {
+        dropdownTrigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            dropdownMenu.classList.toggle('open');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!dropdownTrigger.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('open');
+            }
+        });
+        
+        // Close dropdown when clicking on links
+        dropdownMenu.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                dropdownMenu.classList.remove('open');
+            }
+        });
+    }
+
+    // Handle mobile menu (bars icon)
     var barsIcon = document.querySelector('.bars-icon');
     var trigger = barsIcon ? (barsIcon.closest('a') || barsIcon) : null;
     if (!trigger) return;

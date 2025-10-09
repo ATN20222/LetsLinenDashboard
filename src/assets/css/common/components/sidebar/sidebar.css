@@ -1,7 +1,7 @@
 /* Sidebar-only styles using Tailwind utilities and theme tokens */
 
 .ds-sidebar {
-  @apply bg-surface-1 backdrop-blur-md border-r border-current/10 px-4 py-5 sticky top-0 h-screen;
+  @apply max-w-[260px] bg-surface-1 backdrop-blur-md border-r border-current/10 px-4 py-5 sticky top-0 h-screen;
 }
 
 .ds-brand {
