@@ -8,6 +8,7 @@ body {
     @apply font-poppins list-none scroll-smooth;
 
 }
+
 .Separator{
     @apply h-px bg-landing-text mb-5 mt-5;
 }
